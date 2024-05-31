@@ -1,0 +1,388 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+* {
+    font-family: 'Montserrat';
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;   
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    height: 100%;   
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--------------------- Bienvenu -------------------*/
+
+.bienvenu{
+    background-image: url("../IMG/11novembre202338.JPG");
+    
+    background-size: cover;
+    background-position: 30%;
+    background-repeat: no-repeat;
+    padding: 25px;
+    height: 88vh;
+}
+
+.bienvenu h1{
+    margin-left: 10%;
+    margin-top: 56vh;
+    color: white;
+    font-size: 40px;
+    font-weight: 750;
+    margin-bottom: 0vh;
+}
+
+.bienvenu h2{
+    margin-left: 10%;
+    margin-top: 0vh;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.fleche{
+    display: flex;
+    justify-content: center;
+}
+
+.fleche img{
+    margin-top: 1.5vh;
+    width: 50px;
+    height: auto;
+    text-align: center;
+}
+
+.titre-carre{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.stat-titre{
+    color: black;
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 10%;
+}
+/*---------- Vrai menu de navigation -----------*/
+
+.navbar{
+    position: fixed;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: white;
+    height: 65px;
+    padding-left: 10%;
+}
+
+.navbar a{
+    color: black;
+    font-size: 23h;
+    font-weight: 600;
+}
+
+.navbar .nav-links ul{
+    display: flex;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.navbar .nav-links ul li{
+    margin: 0 30px;
+}
+
+.navbar .nav-links ul li.active a{
+    color: #cacaca;
+}
+
+.navbar img{
+    margin-top: 4px;
+    width: 40px;
+}
+
+.menuOpen{
+    display: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.hambuger-close{
+    position: absolute;
+    top: -10000%;
+}
+
+/*-----------SECTION CARRÉS----------*/
+
+
+.stat{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.square{
+    background-color: #cacaca;
+    width: 20vh;
+    height: 20vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square p {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+
+/*--------------- Section Pourquoi pas vous ------------*/
+
+.promo{
+    margin-top: 15%;
+}
+
+.pourquoi{
+    text-align: center;
+}
+
+.ligne{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5% 0 5%;
+    margin: 0;
+}
+
+.contact{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+.carre{
+    margin: 0;
+    padding: 2.5%;
+}
+
+.carre h3{
+    text-align: center;
+}
+
+.txt-pourquoi{
+    text-align: justify;
+}
+
+/*-----------SECTION Footer----------*/
+
+
+.footer{
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.square3{
+    width: 30vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+        
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+.button:hover{
+    cursor: pointer;
+    color: #cacaca;
+}
+
+/*=============================================TABLETTE================================================*/
+
+@media screen and (max-width: 1300px) {
+
+    .bienvenu{
+        /*background-image: url("../IMG/IMG_8376 - Copie.JPG");*/
+        background-image: url("../IMG/IMG_8376 - Copie - Copie.jpg");
+        background-position: top;
+        }
+
+    .navbar{
+        padding-left: 5%;
+        margin: 0;
+    }
+
+    .logo{
+        margin-left: 0;
+    }
+
+}
+
+/*=============================================TELEPHONE================================================*/
+
+@media screen and (max-width: 880px) {
+
+    .bienvenu{
+    /*background-image: url("../IMG/IMG_8376 - Copie.JPG");*/
+    background-image: url("../IMG/IMG_8389.jpg");
+    }
+    
+    .bienvenu h1{
+        margin-top: 45vh;
+        margin-left: 5%;
+    }
+
+    .bienvenu h2{
+        margin-left: 5%;
+    }
+
+    .stat-titre{
+        color: black;
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: 25%;
+    }
+    
+/*-----------SECTION CARRÉS----------*/
+
+
+    .stat{
+        margin-top: 10%;
+        margin-bottom: 5%;
+        display: grid;
+        align-items: center;
+        text-align: center;
+    }
+
+    .square{
+        background-color: #cacaca;
+        width: 25vh;
+        height: 25vh;
+    }
+
+    .square p {
+            
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px
+    }
+
+
+
+/*-----------SECTION Pourquoi pas vous ----------*/
+
+.ligne{
+    display: block;
+    text-align: center;
+    padding: 5%;
+    margin: 0;
+}
+
+.contact{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+.promo{
+    margin-top: 10%;
+}
+
+
+/*-----------SECTION NAVIGATION----------*/
+
+    .navbar{
+        padding-left: -10%;
+        margin: 0;
+    }
+
+    .nav-links{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.075);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        color: white;
+        margin-left: -100%;
+    }
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar .nav-links ul li{
+        margin: 25px 0;
+        font-size: 1.5em;
+    }
+
+    .navbar .nav-links ul li a{
+        color: white;
+        font-weight: 700;
+    }
+
+    .nav-links.menu__active{
+        margin-left: 0;
+    }
+
+    .logo{
+        margin-left: 5%;
+    }
+
+    .menuOpen{
+        display: block;
+        margin-right: 5%;
+    }
+
+    .hambuger-close{
+        position: fixed;
+        right: 5%;
+        top: 1%;
+        width: 35px;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pompier Rignieux-le-Franc</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="icon" href="../IMG/Logo-icon.png" type="image/png">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="../index.html" class="logo"><img src="../IMG/Logo.png" alt="logo"></a>
+        <div class="nav-links">
+            <ul>
+                <img src="../IMG/hamburger-close.png" class="hambuger-close">
+                <li><a href="../index.html" class="slis">SLIS</a></li>
+                <li><a href="../html/rejoindre.html">Rejoindre</a></li>
+                <li><a href="../html/caserne.html">Caserne</a></li>
+                <li><a href="../html/contact.html">Contacts</a></li>
+                <li style="width: 250px; margin-left: 0;"><a href="https://drive.google.com/drive/u/4/folders/1_7vliOP8Vgjb1uVN-EVynXm4RQdwaXrF" style="width: 250px;">Espace documentaire</a></li>
+            </ul>
+        </div>
+        <div class="menuOpen"><a href="#"><img src="../IMG/hamburger.png" class="hamburger"></a></div>
+    </nav>
+    
+    <section>
+       
+        <div class="page">
+            <h1>Contacts</h1>
+            <p>Vous avez des questions ou souhaitez plus d'informations sur le SLIS ? </br> N'hesitez pas à contacter le chef de centre du SLIS de Rignieux-le-Franc</p>
+            <h2>ADRESSE MAIL :</h2>
+            <a class="mail" href="mailto:recrutementslisrignieuxlef@gmail.com"><p>recrutementSLISrignieuxleF@gmail.com</p></a>
+            <!--<h2>TÉLÉPHONE DU CHEF DE CENTRE, ......... .......</h2>
+            <p>+33 . .. .. .. ..</p>-->
+        </div>
+
+    </section>
+</body>
+<script>
+    const menuOpen = document.querySelector(".menuOpen")
+    const menuClose = document.querySelector(".hambuger-close")
+    const navlinks = document.querySelector(".nav-links")
+
+    menuOpen.addEventListener('click', () => {
+        console.log('click')
+        navlinks.classList.toggle('menu__active')
+    });
+
+    menuClose.addEventListener('click', () => {
+        console.log('click')
+        navlinks.classList.toggle('menu__active')
+    });
+
+</script>
+</html>

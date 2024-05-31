@@ -1,0 +1,444 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+* {
+    font-family: 'Montserrat';
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;   
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    height: 100%;   
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--------------------- Bienvenu -------------------*/
+
+.bienvenu{
+    background-image: url("../IMG/IMG_8464.jpg");
+    background-size: cover;
+    background-position: 30%;
+    background-repeat: no-repeat;
+    padding: 25px;
+    height: 88vh;
+}
+
+.bienvenu h1{
+    margin-left: 10%;
+    margin-top: 56vh;
+    color: white;
+    font-size: 40px;
+    font-weight: 750;
+    margin-bottom: 0vh;
+}
+
+.bienvenu h2{
+    margin-left: 10%;
+    margin-top: 0vh;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.fleche{
+    display: flex;
+    justify-content: center;
+}
+
+.fleche img{
+    margin-top: 1.5vh;
+    width: 50px;
+    height: auto;
+    text-align: center;
+}
+
+.stat-titre{
+    color: black;
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 10%;
+}
+
+/*---------- Vrai menu de navigation -----------*/
+
+.navbar{
+    position: fixed;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: white;
+    height: 65px;
+    padding-left: 10%;
+}
+
+.navbar a{
+    color: black;
+    font-size: 23h;
+    font-weight: 600;
+}
+
+.navbar .nav-links ul{
+    display: flex;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.navbar .nav-links ul li{
+    margin: 0 30px;
+}
+
+.navbar .nav-links ul li.active a{
+    color: #cacaca;
+}
+
+.navbar img{
+    margin-top: 4px;
+    width: 40px;
+}
+
+.menuOpen{
+    display: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.hambuger-close{
+    position: absolute;
+    top: -10000%;
+}
+
+/*-----------SECTION CARRÉS----------*/
+
+
+.stat{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.square{
+    background-color: #cacaca;
+    width: 20vh;
+    height: 20vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square p {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+
+/*--------------- Section Superficie ------------*/
+
+.superf{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 50vh;
+}
+
+.superf-square{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.superf p {
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 55px;
+}
+
+
+.sol{
+    background: url(../IMG/Rignieux-le-Franc-Sols.png) center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8%;
+}
+
+/*-----------SECTION CARRÉS 2----------*/
+
+
+.carre2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.square2{
+    width: 30vh;
+    height: 30vh;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square2 p {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+.pass{
+    background-image: url("../IMG/pass2.png");
+    background-size: cover;
+}
+
+.pass:hover{
+    background-image: url("../IMG/pass3.png");
+    background-size: cover;;
+}
+
+.vehicule{
+    background-image: url("../IMG/IMG_9692\ -\ Copie.jpg");
+    background-size: cover;
+}
+
+.vehicule:hover{
+    background-image: url("../IMG/IMG_9709.jpg");
+    background-size: cover;
+}
+
+.photo{
+    background-image: url("../IMG/pass12.jpeg");
+    background-size: cover;
+}
+
+.photo:hover{
+    background-image: url("../IMG/pass4.png");
+    background-size: cover;
+}
+
+
+/*-----------SECTION Footer----------*/
+
+
+.footer{
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.square3{
+    width: 30vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+        
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+.button:hover{
+    cursor: pointer;
+    color: #cacaca;
+}
+
+
+/*=============================================TABLETTE================================================*/
+
+@media screen and (max-width: 1300px) {
+
+    .navbar{
+        padding-left: 5%;
+        margin: 0;
+    }
+
+    .logo{
+        margin-left: 0;
+    }
+
+}
+
+
+/*=============================================TELEPHONE================================================*/
+
+@media screen and (max-width: 880px) {
+
+    .bienvenu{
+        background-image: url("../IMG/IMG_8455.jpg");
+    }
+
+    .bienvenu h1{
+        margin-top: 45vh;
+        margin-left: 5%;
+    }
+
+    .bienvenu h2{
+        margin-left: 5%;
+    }
+
+    .stat-titre{
+        color: black;
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: 25%;
+    }
+    
+/*-----------SECTION CARRÉS----------*/
+
+
+    .stat{
+        margin-top: 10%;
+        margin-bottom: 5%;
+        display: grid;
+        align-items: center;
+        text-align: center;
+    }
+
+    .square{
+        background-color: #cacaca;
+        width: 25vh;
+        height: 25vh;
+    }
+
+    .square p {
+            
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px
+    }
+
+
+
+/*-----------SECTION SUPERFICIE----------*/
+
+
+    .superf{
+        display: grid;
+        grid-template-columns: 100%;
+        min-height: 50vh;
+    }
+
+    .sol{
+        position: fixed;
+        top: -1000000000000000000000000%;
+    }
+
+
+/*-----------SECTION CARRÉS 2----------*/
+
+
+    .carre2{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: grid;
+        align-items: center;
+        text-align: center;
+    }
+
+    .square2{
+        margin-bottom: 10%;
+    }
+
+
+/*-----------SECTION NAVIGATION----------*/
+
+    .navbar{
+        padding-left: -10%;
+        margin: 0;
+    }
+
+    .nav-links{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.075);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        color: white;
+        margin-left: -1000%;
+    }
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar .nav-links ul li{
+        margin: 25px 0;
+        font-size: 1.5em;
+    }
+
+    .navbar .nav-links ul li a{
+        color: white;
+        font-weight: 700;
+    }
+
+    .nav-links.menu__active{
+        margin-left: 0;
+    }
+
+    .logo{
+        margin-left: 5%;
+    }
+
+    .menuOpen{
+        display: block;
+        margin-right: 5%;
+    }
+
+    .hambuger-close{
+        position: fixed;
+        right: 5%;
+        top: 1%;
+        width: 35px;
+    }
+
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pompier Rignieux-le-Franc</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="../IMG/Logo-icon.png" type="image/png">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="./IMG/Logo.png" alt="logo"></a>
+        <div class="nav-links">
+            <ul>
+                <img src="./IMG/hamburger-close.png" class="hambuger-close">
+                <li><a href="#entredeux" class="slis">SLIS</a></li>
+                <li><a href="../html/rejoindre.html">Rejoindre</a></li>
+                <li><a href="../html/caserne.html">Caserne</a></li>
+                <li><a href="../html/contact.html">Contacts</a></li>
+                <li style="width: 250px; margin-left: 0;"><a href="https://drive.google.com/drive/u/4/folders/1_7vliOP8Vgjb1uVN-EVynXm4RQdwaXrF" style="width: 250px;">Espace documentaire</a></li>
+            </ul>
+        </div>
+        <div class="menuOpen"><a href="#"><img src="./IMG/hamburger.png" class="hamburger"></a></div>
+    </nav>
+    
+    <section style="background-color: rgba(238, 238, 238, 0.412);">
+       <div class="bienvenu" id="bienvenu">
+            <h1>Service<br>Local<br>d'Incendie et de<br>Secours<br>
+            <h2>Rignieux-le-Franc</h2>
+        </div>
+
+        <div class="fleche button">
+            <a href="#entredeux"><img src="/IMG/fleche.png"></a>
+        </div>
+
+        <div class="entredeux" id="entredeux"></div>
+
+
+        <div class="stat-titre"><h2>Rignieux-le-Franc en chiffres :</h2></div>
+        <div class="stat" id="stat">
+            <div class="square superficie"><p>1502 Hectares de superficie</p></div>
+            <div class="stat-square"><p></p></div>
+            <div class="square nb-inter"><p>15 interventions en 2023</p></div>
+            <div class="stat-square"><p></p></div>
+            <div class="square agents"><p>8 Sapeurs-Pompiers</p></div>
+            <div class="stat-square"><p></p></div>
+            <div class="square vehicules"><p>3 Véhicules d'inter-<br>vention</p></div>
+            <div class="stat-square"><p></p></div>
+        </div>
+
+        <div class="superf" id="superf">
+            <div class="superf-square loremIpsum"><p>Le CPI de Rignieux le Franc a fêté le 25 mai 2013 son centenaire !<br /><br />
+                Né le 25 mai 1913 sous l’impulsion de Pierre JACQUEMET, maire, et du conseil municipal de cette mandature d’avant guerre, le corps de sapeurs pompiers de Rignieux le Franc comptait alors 35 pompiers volontaires.<br /><br />
+                Il n’était équipé que d’une pompe à bras, de quelques seaux en toile et des tuyaux, surplus réformés des pompiers de Lyon.<br /><br />
+                Il est désormais équipé de 3 engins autoportés dont une spécialitée locale, le VPS. Ainsi qu'un engin et une motopompe remorquable utilisés pour la lutte contre les incendies. Et une Vl, véhicule servant à se rendre en formation ou en renfort d'intervention.
+            </p></div>
+            <div class="superf-square sol" style="width: 90%">
+                <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=%25&amp;height=600&amp;hl=fr&amp;q=Rignieux-le-Franc+(Rignieux-le-Franc)&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+        </div>
+
+        <div class="carre2">
+            <a href="https://www.rignieux-le-franc.fr/passation-de-commandement-au-slis-de-rignieux-le-franc/"><div class="square2 pass"><p>Passation de commandement 2023</p></div></a>
+            <a href="./html/caserne.html#vehicule"><div class="square2 vehicule"><p>Véhicules</p></div></a>
+            <a href="./html/caserne.html#galerie"><div class="square2 photo"><p>Galerie photo</p></div></a>
+        </div>
+
+        <div class="footer button">
+            <a href="https://www.rignieux-le-franc.fr/"><p>Mairie Rignieux-le-Franc</p></a>
+            <a href="https://www.facebook.com/profile.php?id=61553375422673"><p><img src="/IMG/logo-F.png" alt="logo facebook SLIS de Rignieux-le-Franc" style="width: 40px; height: 40px;"></p></a>
+            <a href="./html/contact.html"><p>Contacts</p></a>
+        </div>
+    </section>
+</body>
+<script>
+    const menuOpen = document.querySelector(".menuOpen")
+    const menuClose = document.querySelector(".hambuger-close")
+    const slis = document.querySelector(".slis")
+    const navlinks = document.querySelector(".nav-links")
+    
+    menuOpen.addEventListener('click', () => {
+        console.log('click')
+        navlinks.classList.toggle('menu__active')
+    });
+
+    menuClose.addEventListener('click', () => {
+        console.log('click')
+        navlinks.classList.toggle('menu__active')
+    });
+    
+    slis.addEventListener('click', () => {
+        console.log('click')
+        navlinks.classList.toggle('menu__active')
+    });
+
+</script>
+</html>
